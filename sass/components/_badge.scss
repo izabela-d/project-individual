@@ -1,0 +1,22 @@
+.badge-sidebar:after {
+  content: "";
+  position: absolute;
+  line-height: 2rem;
+  border-radius: 50%;
+  top: 0rem;
+  right: 0rem;
+  width: 12px;
+  height: 11px;
+  background-color: #04ae00;
+}
+
+.badge-navbar:after {
+  content: "";
+  position: absolute;
+  line-height: 2rem;
+  border-radius: 50%;
+  width: 9px;
+  height: 8px;
+  top: 1rem;
+  background-color: #f58220;
+}

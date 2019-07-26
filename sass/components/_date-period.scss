@@ -1,0 +1,40 @@
+/*.forms {
+	flex-flow: column;
+	align-items: center;
+	box-shadow: 2px 2px 5px #444;
+}*/
+
+.form-input {
+	border-radius: 3px;
+	border: 1px solid #e3e3e3;
+	float: left;
+	line-height: 40px;
+
+	.first-date {
+		width: 50%;
+	}
+
+	.second-date {
+		width: calc(50% - 40px);
+	}
+
+	& input {
+		border: none;
+		text-align: center;
+		padding: 5px;
+		width: 50%;
+	}
+
+	.border-right {
+		border-right: 1px solid #e3e3e3;
+	}
+
+	& img {
+		display: inline-block;	
+		height: 13px;
+		line-height: 13px;
+		padding-right: 15px;
+	}
+}
+
+

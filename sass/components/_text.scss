@@ -1,0 +1,13 @@
+.block-header {
+	font-size: $block-header-font-size;
+	text-transform: uppercase;
+	margin: 12px 0;
+	border-bottom: 1px solid $light-gray;
+	padding: 0 12px $defult-padding;
+}
+
+hr {
+  margin: 12px 0;
+  border: 0;
+  border-top: 1px solid $light-gray;
+}

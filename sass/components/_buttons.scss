@@ -1,0 +1,32 @@
+.btn {
+    /* Style for "Rounded Re" */
+	border-radius: 3px;
+	background-color: #f58220;
+	overflow: hidden;
+	border-color: #f58220;
+}
+
+.btn__standard {
+	width: 127px;
+	height: 40px;
+	border-radius: 3px;
+	background-color: #f58220;
+	color: #FFF;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.btn__standard--repeat {
+	 /* Style for "Rounded Re" */
+	width: 41px;
+	height: 40px;
+	border-radius: 3px;
+	background-color: #f58220;
+	margin-left: 15px;
+
+	svg {
+		fill: #FFF;
+		height: 15px;
+	}
+}

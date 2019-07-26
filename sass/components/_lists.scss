@@ -1,0 +1,21 @@
+.list-with-one-digit {
+	list-style-type: none;
+	margin: 0;
+	font-weight: 700;
+	padding: 0 20px;
+
+	li {
+		display: inline-block;
+		width: 100%;
+		margin: 5px;
+		line-height: 1.8em;
+		border-bottom: 1px solid $light-gray;
+
+		span {
+			display: inline-block;
+			float: right;
+			color: $black;
+			font-weight: 300;
+		}
+	}
+}

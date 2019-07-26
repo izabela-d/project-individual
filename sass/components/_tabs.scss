@@ -1,0 +1,42 @@
+.tab {
+	text-align: center;
+	margin: 0 15px;
+}
+
+.button-tabs {
+	border: none;
+	background-color: #FFF;	
+	padding: 10px 20px;
+	cursor: pointer;
+	color: #56819f;
+		&:hover {
+        	background-color: #F3F3F1;
+    	}
+
+	i {
+		position: relative;
+		top: 3px;
+		display: inline-block;
+		height: 18px;
+	    width: 18px;
+	    border-radius: 50%;  
+	    margin-right: 15px; 
+	    line-height: 18px; 
+	}
+}
+
+.active {
+	background-color: #F3F3F1;
+}
+
+.marker-first {
+	background-color: #80bfca;
+}
+
+.marker-second {
+	background-color: #ff9a38;
+}
+
+.marker-third {
+	background-color: #04ae00;
+}

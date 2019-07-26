@@ -1,0 +1,163 @@
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  position: fixed;
+  overflow: auto;
+  z-index: 1;
+  background-color: $dark-gray;
+  width: $sidebar-width;
+  float: left;
+
+  .menu {
+    display: block;
+    clear: both;
+  }
+
+  .sidebar-logo {
+    img {
+      padding: 20px;
+    }
+
+    .bars {
+      display: none;
+      color: $light-gray;
+      line-height: 20px;
+      float: right;
+      padding: 20px;
+    }
+
+    @media screen and (max-width: $mobile-max-width) {
+      img {
+        float: left;
+      }
+
+      .bars {
+        display: inline-block;
+      }
+    }
+  }
+  
+  .active {
+      background-color: #282828;
+      .active-links {
+        color: #FFF;
+      }
+      .active-svg {
+        fill: #FFF;
+      }
+      .sidebar-marker {
+        width: 4px;
+        height: 40px;
+        background-color: #f58220;
+        margin-right: 15px; 
+      }
+    }
+  
+  .sidebar-icons {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 40px;
+    &:hover {
+      background-color: #282828;
+      a {
+        color: #FFF;
+      }
+      svg {
+        fill: #FFF;
+      }
+      .sidebar-marker {
+        width: 4px;
+        height: 40px;
+        background-color: #f58220;
+        margin-right: 15px; 
+      }
+    }
+
+    svg {
+      width: 14px;
+      height: 13px;
+      fill: #818181;
+    }
+    
+    .sidebar-marker {
+      width: 4px;
+      height: 40px;
+      margin-right: 15px; 
+    }
+
+      /* Sidebar links */
+    a {
+      color: $mid-light-gray;
+      display: block;
+      padding: 13px;
+      text-decoration: none;
+      height: 40px;
+      font-size: 14px;
+    }
+  }
+  
+  .your-manager {
+    border-top: 1px solid #333333;
+    padding: 10px 20px;
+    margin-top: 25px;
+    
+    h3 {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 42px;
+      text-transform: uppercase;
+      letter-spacing: -0.28px;
+    }
+
+    .manager {
+      display: flex;
+      align-items: center; 
+
+      .sidebar-icons {
+        position: relative;
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      a {
+        color: #56819f;
+        font-size: 14px;
+        font-weight: 300;
+        text-decoration: none;
+
+        &:hover {
+          color: #f58220;
+        }
+      }
+    }   
+  }
+
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: $mobile-max-width) {
+    width: 100%;
+    max-height: none;
+    height: $navbar-height;
+    position: relative;
+    overflow: hidden;
+
+    &.responsive-open {
+      max-height: 100%;
+      position: fixed;
+
+      .menu {
+        display: block;
+      }
+    }
+
+    .menu {
+      display: none;
+    }
+  }
+}
+
+
+
