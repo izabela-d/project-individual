@@ -9,7 +9,11 @@ body {
 }
 .main-container {
   margin-left: $sidebar-width;
-  padding-top: $navbar-height;;
+  padding-top: $navbar-height;
+
+  @media(max-width: $mobile-max-width) {
+    margin-left: 0;
+  }
 }
 
 .container {
@@ -58,18 +62,18 @@ body {
 }
 
 
-@media(max-width: 767px) {
+@media(max-width: $mobile-max-width) {
   @include grid('sm');
 }
 
-@media(min-width: 768px) {
+@media(min-width: $tablet-min-width) {
   @include grid('md');
 }
 
-@media(min-width: 992px) {
+@media(min-width: $tablet-lg-min-width) {
   @include grid('lg');
 }
 
-@media(min-width: 1200px) {
+@media(min-width: $desktop-min-width) {
   @include grid('xl');
 }
