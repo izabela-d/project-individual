@@ -162,7 +162,63 @@
     }
 
     .sidebar-navigation {
-       display: block;
+      display: block;
+      margin-top: 20px;
+      border-top: 1px solid #333333;
+      padding-left: 20px;
+
+      .notification {
+        text-align: center;
+        line-height: $navbar-height;
+      }
+
+      .navbar-icons {
+        position: relative;
+        display: inline-block;
+        top: 3px;
+      }
+      
+      a {
+        text-decoration: none;
+        color: #56819f;
+        font-size: 13px;
+        font-weight: 300;
+
+        &:hover {
+            color: #f58220;
+          }
+      }
+
+      span {
+        font-size: 17px;
+        font-weight: 400;
+      }
+
+      .arrow-down {
+        width: 11px;
+        height: 12px;
+      }
+      
+
+      .notification {
+
+        .badge:after {
+          content: "";
+          position: absolute;
+          top: 1rem;
+          left: 10;
+          line-height: 2rem;
+          width: 9px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: #f58220;
+        }
+      }
+
+      .quit {
+        margin: 0 -11px;
+      }
+
     }
   }
 

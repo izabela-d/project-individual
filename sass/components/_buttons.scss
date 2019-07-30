@@ -1,32 +1,40 @@
 .btn {
-    /* Style for "Rounded Re" */
-	border-radius: 3px;
-	background-color: #f58220;
-	overflow: hidden;
-	border-color: #f58220;
+	display: inline-flex;
+    font-weight: 400;
+    height: 42px;
+    border: 1px solid transparent;
+    font-size: 18px;
+    border-radius: .25rem;
 }
 
-.btn__standard {
-	width: 127px;
-	height: 40px;
-	border-radius: 3px;
-	background-color: #f58220;
+.btn-standard {
 	color: #FFF;
-	font-family: Roboto;
-	font-size: 18px;
-	font-weight: 300;
+	background-color: #f58220;
+	padding: 0 1.5rem;
 }
 
-.btn__standard--repeat {
-	 /* Style for "Rounded Re" */
-	width: 41px;
-	height: 40px;
-	border-radius: 3px;
+.btn-repeat {
 	background-color: #f58220;
 	margin-left: 15px;
+	padding: .75rem;
 
 	svg {
 		fill: #FFF;
-		height: 15px;
+		height: 17px;
 	}
+}
+
+.btn-modal {
+	background-color: #979797;
+	color: #FFF;
+	padding: 0 20px;
+	float: right;
+	margin: 0 20px;
+}
+
+.btn-modal-quit {
+	background-color: #f58220;
+	padding: 0 30px;
+	margin-right: -10px;
+
 }
