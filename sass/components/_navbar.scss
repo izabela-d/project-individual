@@ -20,6 +20,15 @@
     border-left: 1px solid $light-gray;
     text-align: center;
     line-height: $navbar-height;
+    &:hover {
+      background-color: $light-gray;
+      a {
+        color: #f58220;
+      }
+      svg {
+        fill: #f58220;
+      }
+    }
 
     .navbar-icons {
       position: relative;
@@ -37,10 +46,6 @@
       font-size: 13px;
       font-weight: 300;
       margin-left: 10px;
-
-      &:hover {
-          color: #f58220;
-        }
     }
   } 
 

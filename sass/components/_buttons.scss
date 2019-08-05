@@ -1,10 +1,13 @@
 .btn {
 	display: inline-flex;
     font-weight: 400;
-    height: 42px;
+    height: $btn-height;
     border: 1px solid transparent;
-    font-size: 18px;
+    font-size: $btn-font-size;
     border-radius: .25rem;
+    &:hover {
+    	cursor: pointer;
+    }
 }
 
 .btn-standard {
@@ -27,14 +30,18 @@
 .btn-modal {
 	background-color: #979797;
 	color: #FFF;
-	padding: 0 20px;
-	float: right;
-	margin: 0 20px;
+	text-align: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.btn-submit {
+	background-color: #f58220;
+	text-align: center;
+	justify-content: center;
+	width: 100%;
 }
 
 .btn-modal-quit {
 	background-color: #f58220;
-	padding: 0 30px;
-	margin-right: -10px;
-
 }

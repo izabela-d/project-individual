@@ -22,8 +22,10 @@
 
 		&.show {
 			display: block;
-			width: 350px;
-			height: 150px;
+
+			&.modal-quit {
+				min-width: 350px;
+			}
 		}
 
 		.btn-close {
@@ -36,6 +38,37 @@
 		.modal-header {
 			border-bottom: 1px solid $light-gray;
 			padding: 5px 10px 15px;
+			text-transform: uppercase;
 		}
+
+		.modal-body {
+			padding: 20px 20px 40px;
+		}
+
+		//modal-login-form
+		
+		.form-row {
+		    display: -ms-flexbox;
+		    display: flex;
+		    -ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+
+		    .form-row>.col, .form-row>[class*=col-] {
+			    padding-right: 5px;
+			    padding-left: 5px;
+			}
+
+			.col {
+			    -ms-flex-preferred-size: 0;
+			    flex-basis: 0;
+			    -ms-flex-positive: 1;
+			    flex-grow: 1;
+			    //max-width: 100%;
+
+				padding-right: 10px;
+				padding-left: 10px;
+			}
+		}
+
 	}
 }

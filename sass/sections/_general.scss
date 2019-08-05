@@ -1,3 +1,45 @@
+.logo {
+  padding: 20px;
+}
+
+.form-input {
+	width: 100%;
+	border-radius: 3px;
+	border: 1px solid #e3e3e3;
+	float: left;
+	line-height: 40px;
+
+	.first-date {
+		width: 50%;
+		text-align: center;
+	}
+
+	.second-date {
+		width: calc(50% - 55px);
+		text-align: center;
+	}
+
+	& input {
+		border: none;
+		text-align: left;
+		padding: 5px;
+		width: 50%;
+	}
+
+	.border-right {
+		border-right: 1px solid #e3e3e3;
+	}
+
+	& img {
+		display: inline-block;	
+		height: 13px;
+		line-height: 13px;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+}
+
+
 .header-chart {
 	margin-left: 16.66%;
 	padding: 20px 20px 0 20px;

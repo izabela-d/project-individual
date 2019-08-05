@@ -1,0 +1,35 @@
+.page-navigation {
+	display: block;
+
+	.pagination {
+	    display: -ms-flexbox;
+	    display: flex;
+	    padding-left: 0;
+	    list-style: none;
+
+	    .page-link {
+		    position: relative;
+		    display: block;
+		    padding: .5rem .75rem;
+		    margin-left: -1px;
+		    line-height: 1.25;
+		    color: #56819F;
+		    background-color: #fff;
+		    text-decoration: none;
+		    &:hover {
+		    	background-color: #F1F3F3; 
+		    	cursor: pointer;
+		    }		   
+
+		    svg {
+		    	height: 20px;
+		    	width: 20px;
+		    	fill: #9c9c9c;
+		    }
+		}
+
+		.active-pages {
+			background-color: #F1F3F3; 
+		}
+	}
+}

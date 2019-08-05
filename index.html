@@ -48,7 +48,7 @@
             <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
                 C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
             </svg>
-            <a href="#liks">Links</a>
+            <a href="#links">Links</a>
         </div>
         <div class="sidebar-icons">
             <i class="sidebar-marker"></i>
@@ -100,7 +100,7 @@
                     <img src="images/photo.svg" alt="Manager">
                     <i class="badge-sidebar"></i>
                 </span>
-                <a href="#">Mikhael E.</a>
+                <a href="javascript:void(0);" onclick="openModal('#messengerModal')">Mikhael E.</a>
             </div>
         </div>
 
@@ -145,7 +145,7 @@
                 c-1.8-1.4-3-3.5-3-6C2,5.4,5.4,2,9.5,2S17,5.4,17,9.5C17,11.9,15.8,14.1,14,15.5z"/>
             </svg>
         </span>
-            <a href="#">Leonardo Dicaprio</a>
+            <a href="javascript:void(0);" class="bars" onclick="openModal('#loginModal')">Leonardo Dicaprio</a>
         </div>
 
 
@@ -161,6 +161,7 @@
         </div>
     </div>
 </div>
+
 
 <div class="main-container">
     <div class="navbar">
@@ -205,9 +206,8 @@
                 c-1.8-1.4-3-3.5-3-6C2,5.4,5.4,2,9.5,2S17,5.4,17,9.5C17,11.9,15.8,14.1,14,15.5z"/>
             </svg>
         </span>
-            <a href="#">Leonardo Dicaprio</a>
+            <a href="javascript:void(0);" class="bars" onclick="openModal('#loginModal')">Leonardo Dicaprio</a>
         </div>
-
 
         <div class="quit">
             <a href="javascript:void(0);" class="bars" onclick="openModal('#quitModal')">
@@ -220,6 +220,7 @@
         </div>
 
     </div>
+
 
     <div class="container-fluid">
         <div class="row">
@@ -294,9 +295,269 @@
             </div>
         </div>
 
+        
         <div class="row">
             <div class="content-box">
-                <h2 class="block-header">Links</h2>
+                <h2 id="details" class="block-header">Details statistic</h2>
+                <form>
+                    <div class="content-block">
+                        <div class="row justify-content-center">
+              
+                            <div class="form-group">
+                                <div class="form-input">
+                                    <input class="border-right first-date" type="text" name="start-date"
+                                           placeholder="16.05.2016"/>
+                                    <input id="calendar" class="second-date" type="text" name="end-date"
+                                           placeholder="16.05.2016"/>
+                                    <img src="images/icons/calendar.svg" alt="calendar">
+                                </div>
+                                <button class="btn btn-repeat">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 16 17" style="enable-background:new 0 0 16 17;"
+                                         xml:space="preserve">
+                                <path d="M11,6h5V1h-1v3.3l-1.2-1.1c-2.9-2.9-7.7-2.9-10.6,0c-2.9,2.9-2.9,7.7,0,10.6C4.7,15.3,6.6,16,8.5,16s3.8-0.7,5.3-2.2
+                                    l-0.7-0.7c-2.5,2.5-6.7,2.5-9.2,0c-2.5-2.5-2.5-6.7,0-9.2c2.5-2.5,6.7-2.5,9.2,0L14.2,5H11V6z"/>
+                                </svg>
+                                </button>
+                            </div>
+                        
+                        </div>
+                       
+                    </div>
+                    <hr>
+                    <div class="content-block">
+
+                        <div class="table">
+                            <div class="row scroll-wrapper">
+                                
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">
+                                                <a href="">Tracker name
+                                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                         viewBox="0 0 7 5" style="enable-background:new 0 0 7 5;" xml:space="preserve">
+                                                    <polygon points="6.1,4.9 3.5,2.2 0.9,4.9 0.1,4.1 3.5,0.8 6.9,4.1 "/>
+                                                    </svg>
+                                                </a>
+                                            </th>
+                                            <th scope="col">
+                                                <a href="">Initiated date
+                                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                         viewBox="0 0 7 5" style="enable-background:new 0 0 7 5;" xml:space="preserve">
+                                                    <polygon points="6.1,4.9 3.5,2.2 0.9,4.9 0.1,4.1 3.5,0.8 6.9,4.1 "/>
+                                                    </svg>
+                                                </a>
+                                            </th>
+                                            <th scope="col">
+                                                <a href="">Visits
+                                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                         viewBox="0 0 7 5" style="enable-background:new 0 0 7 5;" xml:space="preserve">
+                                                    <polygon points="6.1,4.9 3.5,2.2 0.9,4.9 0.1,4.1 3.5,0.8 6.9,4.1 "/>
+                                                    </svg>
+                                                </a>
+                                            </th>
+                                            <th scope="col">
+                                                <a href="">Unique
+                                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                         viewBox="0 0 7 5" style="enable-background:new 0 0 7 5;" xml:space="preserve">
+                                                    <polygon points="6.1,4.9 3.5,2.2 0.9,4.9 0.1,4.1 3.5,0.8 6.9,4.1 "/>
+                                                    </svg>
+                                                </a>
+                                            </th>
+                                            <th scope="col">
+                                                <a href="">Signups
+                                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                         viewBox="0 0 7 5" style="enable-background:new 0 0 7 5;" xml:space="preserve">
+                                                    <polygon points="6.1,4.9 3.5,2.2 0.9,4.9 0.1,4.1 3.5,0.8 6.9,4.1 "/>
+                                                    </svg>
+                                                </a>
+                                            </th>
+                                            <th scope="col">
+                                                <a href="">FTD
+                                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                         viewBox="0 0 7 5" style="enable-background:new 0 0 7 5;" xml:space="preserve">
+                                                    <polygon points="6.1,4.9 3.5,2.2 0.9,4.9 0.1,4.1 3.5,0.8 6.9,4.1 "/>
+                                                    </svg>
+                                                </a>
+                                            </th>
+                                            <th scope="col">
+                                                <a href="">Depositors
+                                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                         viewBox="0 0 7 5" style="enable-background:new 0 0 7 5;" xml:space="preserve">
+                                                    <polygon points="6.1,4.9 3.5,2.2 0.9,4.9 0.1,4.1 3.5,0.8 6.9,4.1 "/>
+                                                    </svg>
+                                                </a>
+                                            </th>
+                                            <th scope="col">
+                                                <a href="">Deposits($)
+                                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                         viewBox="0 0 7 5" style="enable-background:new 0 0 7 5;" xml:space="preserve">
+                                                    <polygon points="6.1,4.9 3.5,2.2 0.9,4.9 0.1,4.1 3.5,0.8 6.9,4.1 "/>
+                                                    </svg>
+                                                </a>
+                                            </th>
+                                            <th scope="col">
+                                                <a href="">Payout($)
+                                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                         viewBox="0 0 7 5" style="enable-background:new 0 0 7 5;" xml:space="preserve">
+                                                    <polygon points="6.1,4.9 3.5,2.2 0.9,4.9 0.1,4.1 3.5,0.8 6.9,4.1 "/>
+                                                    </svg>
+                                                </a>
+                                            </th>
+                                            <th scope="col">
+                                                <a href="">Turnover
+                                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                         viewBox="0 0 7 5" style="enable-background:new 0 0 7 5;" xml:space="preserve">
+                                                    <polygon points="6.1,4.9 3.5,2.2 0.9,4.9 0.1,4.1 3.5,0.8 6.9,4.1 "/>
+                                                    </svg>
+                                                </a>
+                                            </th>
+                                            <th scope="col">
+                                                <a href="">Deal
+                                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                         viewBox="0 0 7 5" style="enable-background:new 0 0 7 5;" xml:space="preserve">
+                                                    <polygon points="6.1,4.9 3.5,2.2 0.9,4.9 0.1,4.1 3.5,0.8 6.9,4.1 "/>
+                                                    </svg>
+                                                </a>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    
+                                    <tbody>
+                                        <tr>
+                                            <td>alf/sam_test</td>
+                                            <td>17/08/02(12:58)</td>
+                                            <td>232</td>
+                                            <td>114</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>3</td>
+                                            <td>34,425.00</td>
+                                            <td>234.00</td>
+                                            <td>421,342.00</td>
+                                            <td>cpl(200)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>alf/sam_test</td>
+                                            <td>15/08/02(12:58)</td>
+                                            <td>232</td>
+                                            <td>114</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>3</td>
+                                            <td>29,436.00</td>
+                                            <td>941.00</td>
+                                            <td>784,435.00</td>
+                                            <td>cpl(200)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>alf/sam_test</td>
+                                            <td>17/08/02(12:58)</td>
+                                            <td>232</td>
+                                            <td>114</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>3</td>
+                                            <td>34,425.00</td>
+                                            <td>234.00</td>
+                                            <td>421,342.00</td>
+                                            <td>cpl(200)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>alf/sam_test</td>
+                                            <td>15/08/02(12:58)</td>
+                                            <td>232</td>
+                                            <td>114</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>3</td>
+                                            <td>29,436.00</td>
+                                            <td>941.00</td>
+                                            <td>784,435.00</td>
+                                            <td>cpl(200)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>alf/sam_test</td>
+                                            <td>17/08/02(12:58)</td>
+                                            <td>232</td>
+                                            <td>114</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>3</td>
+                                            <td>34,425.00</td>
+                                            <td>234.00</td>
+                                            <td>421,342.00</td>
+                                            <td>cpl(200)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>alf/sam_test</td>
+                                            <td>15/08/02(12:58)</td>
+                                            <td>232</td>
+                                            <td>114</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>3</td>
+                                            <td>29,436.00</td>
+                                            <td>941.00</td>
+                                            <td>784,435.00</td>
+                                            <td>cpl(200)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>alf/sam_test</td>
+                                            <td>17/08/02(12:58)</td>
+                                            <td>232</td>
+                                            <td>114</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>3</td>
+                                            <td>34,425.00</td>
+                                            <td>234.00</td>
+                                            <td>421,342.00</td>
+                                            <td>cpl(200)</td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </div>
+
+                         <nav class="page-navigation">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item"><a class="page-link" href="#">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 11 17" style="enable-background:new 0 0 11 17;" xml:space="preserve">
+                                    <polygon points="9.3,16.9 0.9,8.5 9.3,0.1 10,0.9 2.4,8.5 10,16.1 "/>
+                                    </svg>
+                                </a></li>
+                                <li class="page-item"><a class="page-link active-pages" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                <li class="page-item"><a class="page-link" href="#">8</a></li>
+                                <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                <li class="page-item"><a class="page-link" href="#">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 11 17" style="enable-background:new 0 0 11 17;" xml:space="preserve">
+                                    <polygon points="1.6,16.9 0.9,16.1 8.6,8.5 0.9,0.9 1.6,0.1 10,8.5 "/>
+                                    </svg>
+                                </a></li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="content-box">
+                <h2 id="links" class="block-header">Links</h2>
 
                 <div class="content-block table-with-links">
                     <div class="row justify-content-center">
@@ -310,7 +571,7 @@
                             </td>
 
                             <td>
-                                <a class="links__link" href="#">http://www.homepage.com</a>
+                                <a class="links" href="#">http://www.homepage.com</a>
                             </td>
 
                             <td>
@@ -340,7 +601,7 @@
                             </td>
 
                             <td>
-                                <a class="links__link" href="#">http://currently.com</a>
+                                <a class="links" href="#">http://currently.com</a>
                             </td>
 
                             <td>
@@ -370,7 +631,7 @@
                             </td>
 
                             <td>
-                                <a class="links__link" href="#">http://blurpix.com</a>
+                                <a class="links" href="#">http://blurpix.com</a>
                             </td>
 
                             <td>
@@ -400,7 +661,7 @@
                             </td>
 
                             <td>
-                                <a class="links__link" href="#">http://yoursite.com</a>
+                                <a class="links" href="#">http://yoursite.com</a>
                             </td>
 
                             <td>
@@ -430,7 +691,7 @@
                             </td>
 
                             <td>
-                                <a class="links__link" href="#">http://google.com</a>
+                                <a class="links" href="#">http://google.com</a>
                             </td>
 
                             <td>
@@ -460,7 +721,7 @@
                             </td>
 
                             <td>
-                                <a class="links__link" href="#">http://fecebook.com</a>
+                                <a class="links" href="#">http://fecebook.com</a>
                             </td>
 
                             <td>
@@ -490,7 +751,7 @@
                             </td>
 
                             <td>
-                                <a class="links__link" href="#">http://dashboard.com</a>
+                                <a class="links" href="#">http://dashboard.com</a>
                             </td>
 
                             <td>
@@ -520,7 +781,7 @@
                             </td>
 
                             <td>
-                                <a class="links__link" href="#">http://blurax.com</a>
+                                <a class="links" href="#">http://blurax.com</a>
                             </td>
 
                             <td>
@@ -550,7 +811,7 @@
                             </td>
 
                             <td>
-                                <a class="links__link" href="#">http://pieceofwine.com</a>
+                                <a class="links" href="#">http://pieceofwine.com</a>
                             </td>
 
                             <td>
@@ -580,7 +841,7 @@
                             </td>
 
                             <td>
-                                <a class="links__link" href="#">http://twitter.com</a>
+                                <a class="links" href="#">http://twitter.com</a>
                             </td>
 
                             <td>
@@ -615,15 +876,398 @@
             </div>
         </div>
 
+        
+        <div class="row">
+            <div class="content-box">
+                <h2 id="banners" class="block-header">Banners</h2>
+
+                <div class="content-block table-with-links scroll-wrapper">
+                    <div class="row justify-content-center">
+                        <button class="btn btn-standard">+ add new</button>
+                    </div>
+
+                    <table>
+                        <tr>
+                            <td>
+                                <p>Banner main</p>
+                            </td>
+
+                            <td>
+                                <a class="links" href="#">http://www.website.com/bannermain.gif</a>
+                            </td>
+
+                            <td>
+                                <div class="table-icons">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;"
+                                         xml:space="preserve">
+                                    <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
+                                        C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                                    </svg>
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;"
+                                         xml:space="preserve">
+                                    <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
+                                        V6H8z M5,6v8h1V6H5z"/>
+                                    </svg>
+                                </div>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p>Sign up banner</p>
+                            </td>
+
+                            <td>
+                                <a class="links" href="#">http://www.website.com/signup.gif</a>
+                            </td>
+
+                            <td>
+                                <div class="table-icons">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;"
+                                         xml:space="preserve">
+                                    <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
+                                        C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                                    </svg>
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;"
+                                         xml:space="preserve">
+                                    <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
+                                        V6H8z M5,6v8h1V6H5z"/>
+                                    </svg>
+                                </div>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p>Banner left side</p>
+                            </td>
+
+                            <td>
+                                <a class="links" href="#">http://www.website.com/leftside.gif</a>
+                            </td>
+
+                            <td>
+                                <div class="table-icons">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;"
+                                         xml:space="preserve">
+                                    <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
+                                        C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                                    </svg>
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;"
+                                         xml:space="preserve">
+                                    <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
+                                        V6H8z M5,6v8h1V6H5z"/>
+                                    </svg>
+                                </div>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p>Vertical banner</p>
+                            </td>
+
+                            <td>
+                                <a class="links" href="#">http://www.website.com/vert.gif</a>
+                            </td>
+
+                            <td>
+                                <div class="table-icons">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;"
+                                         xml:space="preserve">
+                                    <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
+                                        C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                                    </svg>
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;"
+                                         xml:space="preserve">
+                                    <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
+                                        V6H8z M5,6v8h1V6H5z"/>
+                                    </svg>
+                                </div>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p>Front banner</p>
+                            </td>
+
+                            <td>
+                                <a class="links" href="#">http://www.website.com/front.gif</a>
+                            </td>
+
+                            <td>
+                                <div class="table-icons">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;"
+                                         xml:space="preserve">
+                                    <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
+                                        C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                                    </svg>
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;"
+                                         xml:space="preserve">
+                                    <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
+                                        V6H8z M5,6v8h1V6H5z"/>
+                                    </svg>
+                                </div>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p>Horizontal banner</p>
+                            </td>
+
+                            <td>
+                                <a class="links" href="#">http://www.website.com/horizontal.gif</a>
+                            </td>
+
+                            <td>
+                                <div class="table-icons">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;"
+                                         xml:space="preserve">
+                                    <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
+                                        C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                                    </svg>
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;"
+                                         xml:space="preserve">
+                                    <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
+                                        V6H8z M5,6v8h1V6H5z"/>
+                                    </svg>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="row justify-content-center">
+                        <button class="btn btn-standard">+ add new</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="content-box">
+                <h2 id="personaldata" class="block-header">Personal data</h2>
+                <form>
+                    <div class="content-block">
+    
+                        <div class="form-group row justify-content-center">
+                            <label for="inputName" class="col-sm-3 col-form-label">Name</label>
+                            <div class="col-sm-9 col-lg-4">
+                                <input type="text" class="form-control" id="inputName" placeholder="Leonardo">
+                            </div>
+                        </div>
+                        <div class="form-group row justify-content-center">
+                            <label for="inputSurname" class="col-sm-3 col-form-label">Surname</label>
+                            <div class="col-sm-9 col-lg-4">
+                                <input type="text" class="form-control" id="inputSurname" placeholder="Dicaprio">
+                            </div>
+                        </div>
+                        <div class="form-group row justify-content-center">
+                            <label for="inputMail" class="col-sm-3 col-form-label">E-mail</label>
+                            <div class="col-sm-9 col-lg-4">
+                                <input type="email" class="form-control" id="inputMail" placeholder="leo@gmail.com">
+                            </div>
+                        </div>
+                        <div class="form-group row justify-content-center">
+                            <label for="inputPhone" class="col-sm-3 col-form-label">Phone number</label>
+                            <div class="col-sm-9 col-lg-4">
+                                <input type="number" class="form-control" id="inputPhone" placeholder="+1 5815 1551">
+                            </div>
+                        </div>
+                   
+                    </div>
+                    <hr>
+
+                    <div class="content-block">
+                    
+                        <div class="form-group row justify-content-center">
+                            <label for="inputSkype" class="col-sm-3 col-form-label">Skype</label>
+                            <div class="col-sm-9 col-lg-4">
+                                <input type="text" class="form-control" id="inputSkype" placeholder="LeonardoD">
+                            </div>
+                        </div>
+                        <div class="form-group row justify-content-center">
+                            <label for="inputIcq" class="col-sm-3 col-form-label">ICQ</label>
+                            <div class="col-sm-9 col-lg-4">
+                                <input type="text" class="form-control" id="inputIcq" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group row justify-content-center">
+                            <label for="inputMsn" class="col-sm-3 col-form-label">Msn</label>
+                            <div class="col-sm-9 col-lg-4">
+                                <input type="text" class="form-control" id="inputMsn" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                   <hr> 
+
+                   <div class="content-block">
+
+                        <div class="form-group row justify-content-center">
+                            <label for="inputWallet" class="col-sm-3 col-form-label">Wallet</label>
+                            <div class="col-sm-9 col-lg-4">
+                                <input type="number" class="form-control" id="inputWallet" placeholder="">
+                            </div>
+                        </div>
+                    
+                    </div>  
+                    <hr>
+
+                   <div class="content-block">
+                        
+                        <div class="form-group row justify-content-center">
+                            <label for="inputPassword" class="col-sm-3 col-form-label">Password</label>
+                            <div class="col-sm-9 col-lg-4">
+                                <input type="password" class="form-control" id="inputPassword" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group row justify-content-center">
+                            <label for="inputPassword2" class="col-sm-3 col-form-label">Repeat</label>
+                            <div class="col-sm-9 col-lg-4">
+                                <input type="password" class="form-control" id="inputPassword2" placeholder="">
+                            </div>
+                        </div>
+                       
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+
+
     </div>
 </div>
 
 <div class="overlay" id="overlay">
-    <div class="modal" id="quitModal">
+    <div class="modal modal-quit" id="quitModal">
         <div class="btn-close js--close-modal"></div>
         <h4 class="modal-header">Do you really want to Quit?</h4>
-        <button class="js--close-modal btn btn-modal">Cancel</button>
-        <button class="js--close-modal btn btn-modal btn-modal-quit">Quit</button>
+        <div class="modal-body">
+            <div class="form-row justify-content-center">
+                <div class="col col-md-4">
+                </div>
+                <div class="col col-md-4">
+                    <button class="js--close-modal btn btn-modal">Cancel</button>
+                </div>
+
+                <div class="col col-md-4">
+                    <button class="js--close-modal btn btn-modal btn-modal-quit">Quit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-login" id="loginModal">
+        <div class="btn-close js--close-modal"></div>
+        <h4 class="modal-header">LOGIN</h4>
+        <form>
+            <div class="modal-body">
+                <div class="form-row justify-content-center">
+                    <div class="col col-md-4">
+                        <div class="form-input">
+                            <img src="images/icons/login.svg" alt="calendar">
+                            <input class="form-control" type="text" name="start-date"
+                                   placeholder="login"/>
+                        </div>
+                    </div>
+
+                    <div class="col col-md-4">
+                        <div class="form-input">
+                            <img src="images/icons/password.svg" alt="calendar">
+                            <input  class="form-control" type="text" name="end-date"
+                                    placeholder="password"/>
+                        </div>
+                    </div>
+
+                    <div class="col col-md-4">
+                        <button class="js--close-modal btn btn-modal btn-submit">Enter</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="modal modal-messenger" id="messengerModal">
+        <div class="btn-close js--close-modal"></div>
+        <h4 class="modal-header">Online chat with your personal manager</h4>
+        <div class="manager">
+                <span class="sidebar-icons">
+                    <img src="images/photo.svg" alt="Manager">
+                </span>
+            <a href="javascript:void(0);" onclick="openModal('#messengerModal')">
+                Mikhael E.
+                <span class="online">online</span>
+            </a>
+        </div>
+        <form>
+            <div class="modal-body">
+                <div class="messenger-container">
+                    <div class="row">
+                        <span class="message">
+                            Hello. Can I help you?
+                        </span>
+                    </div>
+
+                    <div class="row">
+                        <span class="message message-sent">
+                            Hello! I would like to know about Postback.
+                        </span>
+                    </div>
+
+                    <div class="row">
+                        <span class="message">
+                            Ok. 5 min
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-body enter-message">
+                <div class="form-row justify-content-center">
+                    <div class="col col-md-10 col-sm-8">
+                        <div class="form-input">
+                            <img src="images/icons/login.svg" alt="calendar">
+                            <input class="form-control" type="text" name="start-date"
+                                   placeholder="Enter the message.."/>
+                        </div>
+                    </div>
+
+                    <div class="col col-md-2 col-sm-4">
+                        <button class="js--close-modal btn btn-modal btn-submit">Send</button>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
 </div>
 

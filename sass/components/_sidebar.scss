@@ -112,28 +112,6 @@
       text-transform: uppercase;
       letter-spacing: -0.28px;
     }
-
-    .manager {
-      display: flex;
-      align-items: center; 
-
-      .sidebar-icons {
-        position: relative;
-        display: inline-block;
-        margin-right: 10px;
-      }
-
-      a {
-        color: #56819f;
-        font-size: 14px;
-        font-weight: 300;
-        text-decoration: none;
-
-        &:hover {
-          color: #f58220;
-        }
-      }
-    }   
   }
 
   .sidebar-navigation {
@@ -166,6 +144,12 @@
       margin-top: 20px;
       border-top: 1px solid #333333;
       padding-left: 20px;
+      
+      .wallet {
+        span {
+          padding-left: 10px;
+        }
+      }
 
       .notification {
         text-align: center;

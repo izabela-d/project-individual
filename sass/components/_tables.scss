@@ -1,61 +1,86 @@
-.table-with-links {
+.scroll-wrapper {
+	display: block;
+	width: 100%;
+	overflow-x: auto;
+}
+
+
+.table {
 	text-align: center;
 
 	table {
-		max-width: 700px;
+		max-width: 100%;
 		height: 100%;
 		margin: 25px auto;
 		text-align: left;
 		border-collapse: collapse;
 		width: 100%;
+		font-size: 13px;
 
-		tr {			 
-		    border-top: 1px solid #ccc;
-		    padding: 5px;
-		    &:hover {
-			background-color: #F3F3F1;
-				.table-icons {
-					visibility: visible;	
+		td, th {
+		    padding: 1.3rem;
+		    vertical-align: top;
+		    border-top: 1px solid #dee2e6;
+		}
+
+		thead {
+		    display: table-header-group;
+		    vertical-align: middle;
+		    border-color: inherit;
+
+		    tr {
+			    display: table-row;
+			    vertical-align: inherit;
+			    border-color: inherit;
+			
+			    th {
+				    text-align: inherit;
+
+				    a {
+				    	text-decoration: none;
+				    	display: inline-block;
+				    	color: #AFAFAE;
+				    	&:hover {
+					    	background-color: #F5F4F2;
+					    	color: black;
+					    	padding: 10px 0;
+				    		svg {
+				    			visibility: visible;
+				    		}
+				    	}
+
+				    	svg {
+				    		padding-left: 5px;
+				    		height: 13px;
+				    		width: 13px;
+				    		fill: #AFAFAE;
+				    		visibility: hidden;
+				    	}
+				    }
 				}
 			}
 
-		    td {
-		    	.table-icons {
-				display: inline-flex;
-    			flex-direction: row;
-    			flex-wrap: nowrap;
-    			justify-content: space-between;
-    			align-content: center;
-    			align-items: center;
-    			visibility: hidden;
-    				svg {
-	    				width: 15px;
-	    				height: 15px;
-	    				margin: 0 10px;
-	    				cursor: pointer;
-    						&:hover {
-    							fill: #f58220;
-    						}
-    				}
-    			}
-		    }
+		}
 
-		    td:first-child {
-			    width: 40%;
-		    	font-weight: 700;
+
+		tbody {
+		    display: table-row-group;
+		    vertical-align: middle;
+		    border-color: inherit;
+		    color: black;
+
+		    tr {
+			    display: table-row;
+			    vertical-align: inherit;
+			    border-color: inherit;
+			    &:hover {
+					background-color: #F1F3F3;
+					cursor: pointer;
+				}
 			}
-
-		    td:nth-child(3) {
-			    width: 20%;
-			    text-align: right;
-			    padding-right: 10px;
-		    }
 		}
 
-		tr:last-child, td:last-child {
-    		border-bottom: 1px solid #ccc;
-		}
+	
 
 	}
 }
-
