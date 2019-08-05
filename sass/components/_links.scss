@@ -1,3 +1,6 @@
+a {
+  text-decoration: none;
+}
 
 .links {
 	width: 190px;
@@ -7,9 +10,9 @@
 	font-size: $links-font-size;
 	font-weight: 300;
 	line-height: 17px;
-	text-decoration: none;
-	&:hover {
-		color: $links-hover-color;
+	&:hover,
+	&.links-active {
+		color: $dark-orange;
 		font-family: $links-hover-font;
 		font-size: $links-font-size;
 	}

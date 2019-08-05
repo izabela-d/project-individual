@@ -1,4 +1,5 @@
 .btn {
+	color: #FFF;
 	display: inline-flex;
     font-weight: 400;
     height: $btn-height;
@@ -11,7 +12,6 @@
 }
 
 .btn-standard {
-	color: #FFF;
 	background-color: #f58220;
 	padding: 0 1.5rem;
 }
@@ -44,4 +44,60 @@
 
 .btn-modal-quit {
 	background-color: #f58220;
+}
+
+.bg-black {
+	background-color: $black;
+}
+
+.bg-dark-orange {
+	background-color: $dark-orange;
+}
+
+.bg-coral {
+	background-color: $coral;
+}
+
+.bg-dark-gray {
+	background-color: $gray;
+}
+
+.bg-orange {
+	background-color: $orange;
+}
+
+.bg-light-coral {
+	background-color: $light-coral;
+}
+
+.bg-gray {
+	background-color: $gray;
+}
+
+.bg-green {
+	background-color: $green;
+}
+
+.bg-blue {
+	background-color: $blue;
+}
+
+.bg-light-gray {
+	background-color: $light-gray;
+}
+
+.bg-dark-green {
+	background-color: $dark-green;
+}
+
+.bg-red {
+	background-color: $red;
+}
+
+.bg-silver {
+	background-color: $silver;
+}
+
+.bg-sea-green {
+	background-color: $sea-green;
 }
